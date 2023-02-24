@@ -9,60 +9,73 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  
+ 
     <div class="container-text">
         <header>
 
-          <div class="gcse-search"></div>
+          
             <nav>
                 <div class="container">
                   <div class="name">
-                    <h2>Restaurant Blog</h2></div>
-               
-                <div class="nav-bar">
+                    <h2>Restaurant Website</h2></div>
+                    <div class="hamburger-menu"><i class="fa-solid fa-bars" id="hamburger-menu"></i></div>
+                <div class="nav-bar hidden">
                     <ul>
                        <li><a href="#">Home</a></li>
-                       <li><a href="#">About</a></li>
-                       <li><a href="#">Categories</a></li>
-                       <li><a href="#">Contact</a></li>
-                       <li><a href="#">Recipes</a></li>
-                       <li style="white-space:nowrap;"><a href="#">Restaurant Reviews</a></li>
+                       <li><a href="#tarragon">About</a></li>
+                       <li><a href="#categories">Categories</a></li>
+                       <li><a href="#contact-section">Contact</a></li>
+                       <li><a href="https://insanelygoodrecipes.com/tarragon-recipes/">Recipes</a></li>
+                       <li style="white-space:nowrap;"><a href="https://www.tripadvisor.com/Search?q=tarragon&searchSessionId=B65FB37EE235E8073AFAA2E8D8FD0CAF1677226734071ssid&searchNearby=false&geo=293936&sid=FCB28C66E0D4417DB284843AF040E5CF1677226762014&blockRedirect=true">Restaurant Reviews</a></li>
                     </ul>
                     
                 </div>
-                <div class="btn">
-                    <button type="button" onclick="window.open('https://www.naaree.com/submit-recipe/')">
+                <div class="btn hidden">
+                    <button type="button" id="post-button">
                     + Post Recipes
                 </button></div>
             </div>
             </nav>
             <div class="image">
                 <figure>
-                    <img src="./Images/Restaurant.jpg" alt="Restaurant">
+                    <img src="./Images/Restaurant1.jpg" alt="Restaurant" id="image">
         
                 </figure>
     
-                <div class="image-text">
+                <div class="image-text" id="tarragon">
                     <h3>Tarragon Restaurant
                     </h3>
                     <p>There aren't enough food, service, value or atmosphere ratings for Tarragon Restaurant, Bangladesh yet. </p>
                     <a href="https://www.tripadvisor.com/Restaurant_Review-g293936-d10325405-Reviews-Tarragon_Restaurant-Dhaka_City_Dhaka_Division.html#photos;aggregationId=101&albumid=101&filter=7&ff=468532798" target="_blank">Learn more...</a>
-                </div>
+                 <br>
+                 <span></span>
+                 <span></span>
+      
+                  </div>
+
+              <div class="prev-button">
+                <button type="button" id="previous-button">&lt;</button>
+              </div>
+
+              <div class="next-button">
+                <button type="button" id="next-button">&gt;</button>
+              </div>
+
             </div>
            <div class="icon">
-            <figure><img src="./Images/coffee.png" alt="Coffee">
+            <figure><img src="./Images/coffee.png" alt="Coffee" class="icon-img">
             <figcaption>Coffee</figcaption>
             </figure>
-            <figure><img src="./Images/salad.png" alt="Salad">
+            <figure><img src="./Images/salad.png" alt="Salad" class="icon-img">
                 <figcaption>Salad</figcaption>
             </figure>
-            <figure><img src="./Images/potato-chips.png" alt="Potato-Chips">
-                <figcaption>Potato-Chips</figcaption>
+            <figure><img src="./Images/potato-chips.png" alt="Potato-Chips" class="icon-img">
+                <figcaption>Chips</figcaption>
             </figure>
-            <figure><img src="./Images/pizza.png" alt="Pizza">
+            <figure><img src="./Images/pizza.png" alt="Pizza" class="icon-img">
                 <figcaption>Pizza</figcaption>
             </figure>
-            <figure><img src="./Images/sandwich.png" alt="Sandwich">
+            <figure><img src="./Images/sandwich.png" alt="Sandwich" class="icon-img">
                 <figcaption>Sandwich</figcaption>
             </figure>
            </div>
@@ -74,18 +87,18 @@
                 <h3>Most Recent Recipes</h3>
                 <div class="recipes">
                     <figure>
-                        <img src="./Images/Meat Soup.jpg" alt="Meat Soup">
+                        <img src="./Images/Meat Soup.jpg" alt="Meat Soup" class="scale">
                         <figcaption><h3>Meat Soup</h3></figcaption>
                     </figure>
                     <figure>
-                        <img src="./Images/Burger.jpg" alt="Burger">
+                        <img src="./Images/Burger.jpg" alt="Burger" class="scale">
                         <figcaption><h3>Burger</h3></figcaption>
                     </figure>
-                    <figure><img src="./Images/Fried Rice.jpg" alt="Frice Rice">
+                    <figure><img src="./Images/Fried Rice.jpg" alt="Frice Rice" class="scale">
                         <figcaption><h3>Fried Rice</h3></figcaption>
                     </figure>
                     <figure>
-                        <img src="./Images/Noodles.jpg" alt="Noodles">
+                        <img src="./Images/Noodles.jpg" alt="Noodles" class="scale">
                         <figcaption><h3>Noodles</h3></figcaption>
                     </figure>
     
@@ -110,8 +123,8 @@
 
 
    <section class="food-menu">
-    <h1>Food Menu</h1>
-    <div class="first-item">
+    <h1 id="text-animation">Food Menu</h1>
+    <div class="row" id="categories">
         <div class="item1">
             <div class="item-image">
            <img src="./Images/Chicken Biryani.jpg" alt="Chicken Biryani"/>
@@ -123,8 +136,8 @@
               <p>Item:201</p>
               <p>Rate:3/5</p>
               <p>Price:375tk.</p>
-              <div style="background-color:#808080; height:105px;">
-                <button type="button" onclick="window.open('https://biryanibykilo.com/')"> Order Now</button>
+              <div class="button-order">
+                <button type="button"  class="order-button"> Order Now</button>
               </div>
    
             </div>
@@ -141,18 +154,14 @@
                      <p>Item:202</p>
                      <p>Rate:4/5</p>
                      <p>Price:245tk.</p>
-                     <div style="background-color:#808080; height:105px;">
-                      <button type="button" onclick="window.open('https://biryanibykilo.com/')"> Order Now</button>
+                     <div class="button-order">
+                      <button type="button" class="order-button"> Order Now</button>
                     </div>
                    </div>
       
           </div>
           
-    </div>
-    
-
-
-    <div class="second-item">
+   
         <div class="item3">
             <div class="item-image">
            <img src="./Images/Chicken Fry.jpg" alt="Chicken Fry"/>
@@ -164,8 +173,8 @@
               <p>Item:203</p>
               <p>Rate:5/5</p>
               <p>Price:350tk.</p>
-              <div style="background-color:#808080; height:105px;">
-                <button type="button" onclick="window.open('https://biryanibykilo.com/')"> Order Now</button>
+              <div class="button-order">
+                <button type="button" class="order-button"> Order Now</button>
               </div>
             </div>
       
@@ -181,17 +190,16 @@
                      <p>Item:204</p>
                      <p>Rate:2/5</p>
                      <p>Price:200tk.</p>
-                     <div style="background-color:#808080; height:105px;">
-                      <button type="button" onclick="window.open('https://biryanibykilo.com/')"> Order Now</button>
+                     <div class="button-order">
+                      <button type="button" class="order-button"> Order Now</button>
                     </div>
                    </div>
       
     </div>
-   </section>
+  
 
 
-<section>
-    <div class="third-item">
+  
         <div class="item5">
             <div class="item-image">
            <img src="./Images/Chicken Roll.PNG" alt="Chicken Fry"/>
@@ -203,8 +211,8 @@
               <p>Item:205</p>
               <p>Rate:3/5</p>
               <p>Price:180tk.</p>
-              <div style="background-color:#808080; height:105px;">
-                <button type="button" onclick="window.open('https://biryanibykilo.com/')"> Order Now</button>
+              <div class="button-order">
+                <button type="button" class="order-button"> Order Now</button>
               </div>
             </div>
       
@@ -220,19 +228,17 @@
                      <p>Item:206</p>
                      <p>Rate:5/5</p>
                      <p>Price:260tk.</p>
-                     <div style="background-color:#808080; height:105px;">
-                      <button type="button" onclick="window.open('https://biryanibykilo.com/')"> Order Now</button>
+                     <div class="button-order">
+                      <button type="button" class="order-button"> Order Now</button>
                     </div>
                    </div>
       
     </div>
-</div>
-
-</section>
 
 
-<section>
-    <div class="fourth-item">
+
+
+
         <div class="item7">
             <div class="item-image">
            <img src="./Images/Burger1.jpg" alt="Burger"/>
@@ -244,13 +250,13 @@
               <p>Item:206</p>
               <p>Rate:5/5</p>
               <p>Price:299tk.</p>
-              <div style="background-color:#808080; height:105px;">
-                <button type="button" onclick="window.open('https://biryanibykilo.com/')"> Order Now</button>
+              <div class="button-order">
+                <button type="button" class="order-button"> Order Now</button>
               </div>
             </div>
       
           </div>
-          <div class="item7">
+          <div class="item8">
               <div class="item-image">
                   <img src="./Images/Chicken Roast.jpg" alt="Hot Dog"/>
                    </div>
@@ -261,24 +267,43 @@
                      <p>Item:207</p>
                      <p>Rate:4/5</p>
                      <p>Price:120tk.</p>
-                     <div style="background-color:#808080; height:105px;">
-                      <button type="button" onclick="window.open('https://biryanibykilo.com/')"> Order Now</button>
+                     <div class="button-order">
+                      <button type="button" class="order-button"> Order Now</button>
                     </div>
                    </div>
       
     </div>
-    </div>
+
+    <div class="item9">
+      <div class="item-image">
+          <img src="./Images/Chicken Sandwich.jpg" alt="Chicken Sandwich"/>
+           </div>
+           <div class="item-title">
+             <h2>Chicken Sandwich</h2>
+           </div>
+           <div class="item-description">
+             <p>Item:209</p>
+             <p>Rate:5/5</p>
+             <p>Price:185tk.</p>
+             <div class="button-order">
+              <button type="button" class="order-button"> Order Now</button>
+            </div>
+           </div>
+
+</div>
+  </div>
 </section>
 
 
-<section class="contact-section">
+<section id="contact-section">
 
 <div class="subscribe-section">
 
   <h2>Looking for more recipes?</h2>
 
-<h4>Find out our latest recipes and explore them</h4>
-<form>
+<h4>Find out our latest recipes and explore them.</h4>
+
+<form id="loginForm">
 
  <div>
 
@@ -297,14 +322,14 @@
  </div>
  
 <div>
-  <label for="file">Send your recipe's image:</label>
-  <input type="file" name="file" id="file" required/>
+  <label for="file">Send recipe's image:</label>
+  <input type="file" name="file" id="file"/>
 </div>
 
 
 <div class="subscribe-button">
-  <input type="submit" value="Subscribe" onclick="alert('Are you sure to subscribe?')">
-  <button type="button" onclick="window.open('https://www.naaree.com/submit-recipe/')">
+  <input type="submit" value="Subscribe" id="submit-button">
+  <button type="button" id="register-button">
 
     Register
   </button>
@@ -319,7 +344,7 @@
   <img src="./Images/Coffee1.jpg" alt="Coffee1">
 
   <div class="subscribe">
-    <button type="submit" onclick="window.open('https://www.everydayhealthyrecipes.com/subscribe/') ">Subscribe Us</button>
+    <button type="submit" id="subscribe-button">Subscribe Us</button>
   </div>
 </div>
 
@@ -333,7 +358,7 @@
  <details>
   <summary>All rights reserved &copy;2023 Restaurant Website Design</summary>
 
-  <p>This website has been created with html and css.</p>
+  <p>This website has been created with html, css and javascript.</p>
  </details>
 
 
@@ -341,8 +366,8 @@
       
     </div>
 
-    <script async src="https://cse.google.com/cse.js?cx=55e40c7ad9b164b5a">
-    </script>
+  
+    <script src="index.js"></script>
    
 </body>
 </html>
