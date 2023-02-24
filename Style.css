@@ -1190,6 +1190,7 @@ background: rgb(233, 7, 7);
 }
     header nav .container{
         width: 390px;
+       
       
         
     }
@@ -1215,7 +1216,7 @@ background: rgb(233, 7, 7);
      
     header nav .btn button[type="button"]{
        margin-top: 520px;
-       margin-left: -260px;
+       margin-left: -150px;
      
     }
     
@@ -1225,7 +1226,7 @@ background: rgb(233, 7, 7);
        height:300px;
        object-fit: cover;
     display: block;
-   
+    
     }
 
     header .prev-button button{
